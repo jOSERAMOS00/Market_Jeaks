@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Market Jeaks</title>
+  <link rel="stylesheet" href="CSS/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+</head>
+
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container header-content">
+      <div class="logo">
+        <h1>Market Jeaks</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#">Inicio</a></li>
+          <li><a href="#">Tienda</a></li>
+          <li><a href="#">Ofertas</a></li>
+          <li><a href="#">Contacto</a></li>
+          <li>
+            <a href="#"><i class="fas fa-shopping-cart"></i> Carrito (0)</a>
+          </li>
+        </ul>
+      </nav>
+      <!-- Barra de búsqueda -->
+      <div class="search-bar">
+        <input type="text" placeholder="Buscar productos..." />
+        <button type="submit"><i class="fas fa-search"></i></button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Sección Hero -->
+  <section class="hero">
+    <div class="fon">
+      <div class="container">
+        <h2>Bienvenido a Market Jeaks</h2>
+        <p>Encuentra los mejores productos al mejor precio</p>
+        <a href="#" class="btn">Explorar productos</a>
+      </div>
+    </div>
+  </section>
+  <!-- Carrusel de Categorías -->
+  <section class="caru">
+    <div class="carousel-container">
+      <button class="carousel-button left"
+        onclick="document.querySelector('.carousel').scrollBy({left: -100, behavior: 'smooth'})">
+        ◀
+      </button>
+      <div class="carousel">
+        <div class="im">
+          <div class="ico">
+            <a href="#"> <img src="img/electronica.png" alt="Icono 1" /></a>
+            <a href="# " class="pan">eletrodomesticos</a>
+          </div>
+        </div>
+        <div class="im">
+          <div class="ico">
+            <a href="#"> <img src="img/carne.png" alt="Icono 2" /></a>
+            <a href="# " class="pan">Carnes</a>
+          </div>
+        </div>
+        <div class="im">
+          <div class="ico">
+            <a href="#"> <img src="img/deporte.png" alt="Icono 3" /></a>
+            <a href="# " class="pan">Deporte</a>
+          </div>
+        </div>
+        <div class="im">
+          <div class="ico">
+            <a href="#"> <img src="img/disfraz.png" alt="Icono 4" /></a>
+            <a href="# " class="pan">Ropa y Accesorio</a>
+          </div>
+        </div>
+        <div class="im">
+          <div class="ico">
+            <a href="#"> <img src="img/articulos-de-aseo.png" alt="Icono 5" /></a>
+            <a href="# " class="pan">Aseo</a>
+          </div>
+        </div>
+        <div class="im">
+          <div class="ico">
+            <a href="#"> <img src="img/espiritu.png" alt="Icono 6" /></a>
+            <a href="# " class="pan">Licores</a>
+          </div>
+        </div>
+        <div class="im">
+          <div class="ico">
+            <a href="#"> <img src="img/juguete-de-peluche.png" alt="Icono 7" /></a>
+            <a href="# " class="pan">Juguetes</a>
+          </div>
+        </div>
+        <div class="im">
+          <div class="ico">
+            <a href=""> <img src="img/lampara-de-techo.png" alt="Icono 8" /></a>
+            <a href="# " class="pan">Hogar y Decoracion</a>
+          </div>
+        </div>
+        <div class="im">
+          <div class="ico"> 
+            <a href="#"> <img src="img/ordenador-portatil.png" alt="Icono 9" /></a>
+            <a href="# " class="pan">Tegnologia</a>
+          </div>
+        </div>
+        <div class="im">
+          <div class="ico">
+            <a href="#"><img src="img/verduras.png" alt="Icono 10" /></a>
+            <a href="#" class="pan">Verduras</a>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-button right"
+        onclick="document.querySelector('.carousel').scrollBy({left: 100, behavior: 'smooth'})">
+        ▶
+      </button>
+    </div>
+  </section>
+
+  <!-- Sección de productos -->
+  <section class="productos">
+    <div class="container">
+      <h2>Nuestros Productos</h2>
+      <div class="producto-grid">
+        <!-- Productos agregados -->
+        <div class="producto">
+          <img src="https://via.placeholder.com/150" alt="Producto 1" />
+          <h3>Producto 1</h3>
+          <p>$100.00</p>
+          <a href="#" class="btn">Agregar al carrito</a>
+        </div>
+        <div class="producto">
+          <img src="https://via.placeholder.com/150" alt="Producto 2" />
+          <h3>Producto 2</h3>
+          <p>$120.00</p>
+          <a href="#" class="btn">Agregar al carrito</a>
+        </div>
+        <div class="producto">
+          <img src="https://via.placeholder.com/150" alt="Producto 3" />
+          <h3>Producto 3</h3>
+          <p>$90.00</p>
+          <a href="#" class="btn">Agregar al carrito</a>
+        </div>
+        <div class="producto">
+          <img src="https://via.placeholder.com/150" alt="Producto 4" />
+          <h3>Producto 4</h3>
+          <p>$110.00</p>
+          <a href="#" class="btn">Agregar al carrito</a>
+        </div>
+        <div class="producto">
+          <img src="https://via.placeholder.com/150" alt="Producto 5" />
+          <h3>Producto 5</h3>
+          <p>$85.00</p>
+          <a href="#" class="btn">Agregar al carrito</a>
+        </div>
+        <div class="producto">
+          <img src="https://via.placeholder.com/150" alt="Producto 6" />
+          <h3>Producto 6</h3>
+          <p>$130.00</p>
+          <a href="#" class="btn">Agregar al carrito</a>
+        </div>
+        <div class="producto">
+          <img src="https://via.placeholder.com/150" alt="Producto 7" />
+          <h3>Producto 7</h3>
+          <p>$75.00</p>
+          <a href="#" class="btn">Agregar al carrito</a>
+        </div>
+        <div class="producto">
+          <img src="https://via.placeholder.com/150" alt="Producto 8" />
+          <h3>Producto 8</h3>
+          <p>$95.00</p>
+          <a href="#" class="btn">Agregar al carrito</a>
+        </div>
+        <div class="producto">
+          <img src="https://via.placeholder.com/150" alt="Producto 8" />
+          <h3>Producto 9</h3>
+          <p>$96.00</p>
+          <a href="#" class="btn">Agregar al carrito</a>
+        </div>
+        <div class="producto">
+          <img src="https://via.placeholder.com/150" alt="Producto 8" />
+          <h3>Producto 9</h3>
+          <p>$96.00</p>
+          <a href="#" class="btn">Agregar al carrito</a>
+        </div>
+        <div class="producto">
+          <img src="https://via.placeholder.com/150" alt="Producto 8" />
+          <h3>Producto 9</h3>
+          <p>$96.00</p>
+          <a href="#" class="btn">Agregar al carrito</a>
+        </div>
+        <div class="producto">
+          <img src="https://via.placeholder.com/150" alt="Producto 8" />
+          <h3>Producto 9</h3>
+          <p>$96.00</p>
+          <a href="#" class="btn">Agregar al carrito</a>
+        </div>
+        <div class="producto">
+          <img src="https://via.placeholder.com/150" alt="Producto 8" />
+          <h3>Producto 9</h3>
+          <p>$96.00</p>
+          <a href="#" class="btn">Agregar al carrito</a>
+        </div>
+        <div class="producto">
+          <img src="https://via.placeholder.com/150" alt="Producto 8" />
+          <h3>Producto 9</h3>
+          <p>$96.00</p>
+          <a href="#" class="btn">Agregar al carrito</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-column">
+        <h3>Sobre nosotros</h3>
+        <p>
+          Somos una tienda dedicada a ofrecer los mejores productos a precios
+          competitivos.
+        </p>
+      </div>
+      <div class="footer-column">
+        <h3>Enlaces rápidos</h3>
+        <ul class="liner">
+          <li><a href="#">Inicio</a></li>
+          <li><a href="#">Tienda</a></li>
+          <li><a href="#">Contacto</a></li>
+          <li><a href="#">Términos y condiciones</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h3>Síguenos</h3>
+        <ul class="social-icons">
+          <li>
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <p>© 2024 Mi Tienda. Todos los derechos reservados.</p>
+  </footer>
+</body>
+
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrusel de Iconos</title>
+    <style>
+        .carousel {
+            display: flex;
+            overflow-x: auto;
+            scroll-snap-type: x mandatory;
+            -webkit-overflow-scrolling: touch;
+        }
+        .carousel div {
+            scroll-snap-align: center;
+            flex: none;
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #ccc;
+            border-radius: 50%;
+        }
+        .carousel::-webkit-scrollbar {
+            display: none;
+        }
+        .carousel img {
+            width: 50px;
+            height: 50px;
+        }
+        .carousel-container {
+            position: relative;
+            width: 100%;
+            overflow: hidden;
+        }
+        .carousel-button {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+        }
+        .carousel-button.left {
+            left: 0;
+        }
+        .carousel-button.right {
+            right: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="carousel-container">
+        <button class="carousel-button left" onclick="document.querySelector('.carousel').scrollBy({left: -100, behavior: 'smooth'})">◀</button>
+        <div class="carousel">
+            <div><img src="icon1.png" alt="Icono 1"></div>
+            <div><img src="icon2.png" alt="Icono 2"></div>
+            <div><img src="icon3.png" alt="Icono 3"></div>
+            <div><img src="icon4.png" alt="Icono 4"></div>
+            <div><img src="icon5.png" alt="Icono 5"></div>
+            <div><img src="icon6.png" alt="Icono 6"></div>
+            <div><img src="icon7.png" alt="Icono 7"></div>
+            <div><img src="icon8.png" alt="Icono 8"></div>
+            <div><img src="icon9.png" alt="Icono 9"></div>
+            <div><img src="icon10.png" alt="Icono 10"></div>
+            <div><img src="icon11.png" alt="Icono 11"></div>
+            <div><img src="icon12.png" alt="Icono 12"></div>
+            <div><img src="icon13.png" alt="Icono 13"></div>
+            <div><img src="icon14.png" alt="Icono 14"></div>
+            <div><img src="icon15.png" alt="Icono 15"></div>
+            <div><img src="icon16.png" alt="Icono 16"></div>
+            <div><img src="icon17.png" alt="Icono 17"></div>
+            <div><img src="icon18.png" alt="Icono 18"></div>
+            <div><img src="icon19.png" alt="Icono 19"></div>
+            <div><img src="icon20.png" alt="Icono 20"></div>
+            <div><img src="icon21.png" alt="Icono 21"></div>
+            <div><img src="icon22.png" alt="Icono 22"></div>
+        </div>
+        <button class="carousel-button right" onclick="document.querySelector('.carousel').scrollBy({left: 100, behavior: 'smooth'})">▶</button>
+    </div>
+</body>
+</html>
