@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tienda Online - Carrito de Compras</title>
+  <link rel="stylesheet" href="CSS/carrito.css">
+</head>
+<body>
+
+  <header>
+    <h1>Tienda Online</h1>
+  </header>
+
+  <main class="container">
+
+    <!-- Sección de productos -->
+    <section class="products">
+      <h2>Catálogo de Productos</h2>
+      <div class="product-grid">
+        <div class="product">
+          <img src="https://via.placeholder.com/150" alt="Producto 1">
+          <h3>Producto 1</h3>
+          <p>$10.00</p>
+        </div>
+        <div class="product">
+          <img src="https://via.placeholder.com/150" alt="Producto 2">
+          <h3>Producto 2</h3>
+          <p>$15.00</p>
+        </div>
+        <div class="product">
+          <img src="https://via.placeholder.com/150" alt="Producto 3">
+          <h3>Producto 3</h3>
+          <p>$20.00</p>
+        </div>
+        <!-- Puedes duplicar y agregar más productos aquí -->
+        <div class="product">
+          <img src="https://via.placeholder.com/150" alt="Producto 4">
+          <h3>Producto 4</h3>
+          <p>$25.00</p>
+        </div>
+        <div class="product">
+          <img src="https://via.placeholder.com/150" alt="Producto 5">
+          <h3>Producto 5</h3>
+          <p>$30.00</p>
+        </div>
+        <div class="product">
+          <img src="https://via.placeholder.com/150" alt="Producto 6">
+          <h3>Producto 6</h3>
+          <p>$35.00</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección de carrito -->
+    <section class="cart">
+      <h2>Resumen del Carrito</h2>
+      <ul>
+        <li>Producto 1 - $10.00</li>
+        <li>Producto 2 - $15.00</li>
+        <li>Producto 3 - $20.00</li>
+      </ul>
+      <p><strong>Total: $45.00</strong></p>
+    </section>
+
+    <!-- Sección de pago -->
+    <section class="payment">
+      <h2>Pago Seguro</h2>
+      <form action="#">
+        <label for="card">Número de tarjeta:</label>
+        <input type="text" id="card" name="card" placeholder="1234 5678 9101 1121">
+        
+        <label for="name">Nombre en la tarjeta:</label>
+        <input type="text" id="name" name="name" placeholder="Tu nombre completo">
+
+        <label for="expiry">Fecha de expiración:</label>
+        <input type="text" id="expiry" name="expiry" placeholder="MM/AA">
+
+        <label for="cvv">CVV:</label>
+        <input type="text" id="cvv" name="cvv" placeholder="123">
+        
+        <button type="submit">Pagar Ahora</button>
+      </form>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>© 2024 Tienda Online. Todos los derechos reservados.</p>
+  </footer>
+
+</body>
+</html>
